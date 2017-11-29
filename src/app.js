@@ -11,7 +11,7 @@ const paper = app({
   store,
   views,
   render (views) {
-    patch(node, (node = views.App()))
+    patch(node, (node = views.Router()))
   }
 })
 

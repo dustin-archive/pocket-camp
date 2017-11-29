@@ -1,7 +1,4 @@
 
 export { App } from './views/App'
-export { Code } from './views/Code'
-export { Drop } from './views/Drop'
-export { Nav } from './views/Nav'
+export { Main } from './views/Main'
 export { Router } from './views/Router'
-export { Search } from './views/Search'
