@@ -6,7 +6,7 @@ const Drop = (data, state, actions) => children =>
     class: 'drop _overlay'
   }, [
     h('button', {
-      onclick (e) {
+      onclick: e => {
         e.stopPropagation()
         actions.Overlay.toggle(data)
       }

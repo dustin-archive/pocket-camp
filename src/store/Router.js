@@ -1,16 +1,16 @@
 
 import { encode, decode } from '@whaaaley/query-string'
 
-var Router = {
-  init: function () {
-    var hash = window.location.hash
-    var index = hash.indexOf('?')
+const Router = {
+  init: () => {
+    const hash = window.location.hash
+    const index = hash.indexOf('?')
     return {
       query: decode(hash.slice(index)),
       path: hash.slice(1, index === -1 ? hash.length : index)
     }
   },
-  route: function (data, state) {
+  route: (data, state) => {
     window.location.hash = (data.path || state.path) + encode(data.query || state.query)
   }
 }

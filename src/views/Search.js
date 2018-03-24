@@ -5,7 +5,7 @@ const Search = (d, state, actions) =>
   h('input', {
     type: 'text',
     value: decodeURIComponent(state.Router.query.search),
-    onkeypress (e) {
+    onkeypress: e => {
       e.keyCode === 13 && actions.Router.route({
         query: {
           search: encodeURIComponent(e.target.value)
