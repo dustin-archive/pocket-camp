@@ -10,7 +10,7 @@ var Router = {
       path: hash.slice(1, index === -1 ? hash.length : index)
     }
   },
-  route: function (state, a, data) {
+  route: function (data, state) {
     window.location.hash = (data.path || state.path) + encode(data.query || state.query)
   }
 }

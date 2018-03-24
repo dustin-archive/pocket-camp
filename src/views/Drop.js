@@ -1,7 +1,7 @@
 
 import { h } from 'ultradom'
 
-const Drop = (state, actions, v, data) => children =>
+const Drop = (data, state, actions) => children =>
   h('div', {
     class: 'drop _overlay'
   }, [

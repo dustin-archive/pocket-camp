@@ -1,7 +1,7 @@
 
 import { h } from 'ultradom'
 
-const App = (state, a, v, d) =>
+const App = (d, state) =>
   h('a', { href: '#Main' }, 'Tap to start!')
 
 export default App

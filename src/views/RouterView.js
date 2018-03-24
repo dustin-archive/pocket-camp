@@ -1,12 +1,12 @@
 
 import { h } from 'ultradom'
 
-const NotFound = () =>
+const NotFound = d =>
   h('div', null, [
     h('div', null, '404')
   ])
 
-const RouterView = (state, a, views, d) => ({
+const RouterView = (d, state, a, views) => ({
   '': views.App,
   '/main': views.Main
 }[state.Router.path] || NotFound)()

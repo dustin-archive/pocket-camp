@@ -1,7 +1,7 @@
 
 import { h } from 'ultradom'
 
-const Code = (s, a, v, data) =>
+const Code = data =>
   h('div', {
     style: {
       whiteSpace: 'pre'

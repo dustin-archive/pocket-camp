@@ -29,7 +29,7 @@ const Bottom = () =>
     h('div', null, 'more')
   ])
 
-const Main = (s, a, v, d) =>
+const Main = d =>
   h('div', null, [
     Top(),
     h('br'),

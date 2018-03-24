@@ -1,7 +1,7 @@
 
 import { h } from 'ultradom'
 
-const Search = (state, actions, v, d) =>
+const Search = (d, state, actions) =>
   h('input', {
     type: 'text',
     value: decodeURIComponent(state.Router.query.search),
