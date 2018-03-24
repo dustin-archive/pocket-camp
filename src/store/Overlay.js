@@ -11,6 +11,4 @@ var Overlay = {
   }
 }
 
-export default function () {
-  return Overlay
-}
+export default Overlay

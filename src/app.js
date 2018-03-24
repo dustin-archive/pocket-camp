@@ -9,8 +9,6 @@ import App from './views/App'
 import Main from './views/Main'
 import RouterView from './views/RouterView'
 
-let node
-
 const main = app({
   state: {},
   store: {
@@ -23,7 +21,7 @@ const main = app({
     RouterView
   },
   render (views) {
-    patch(node, (node = views.RouterView()))
+    document.body.appendChild(patch(views.RouterView()))
   }
 })
 

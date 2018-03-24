@@ -15,6 +15,4 @@ var Router = {
   }
 }
 
-export default function () {
-  return Router
-}
+export default Router
