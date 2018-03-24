@@ -1,4 +1,5 @@
-import { h } from 'picodom'
+
+import { h } from 'ultradom'
 
 const Search = (state, actions, v, d) =>
   h('input', {
@@ -13,4 +14,4 @@ const Search = (state, actions, v, d) =>
     }
   })
 
-export { Search }
+export default Search

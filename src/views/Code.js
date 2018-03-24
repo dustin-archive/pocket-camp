@@ -1,4 +1,5 @@
-import { h } from 'picodom'
+
+import { h } from 'ultradom'
 
 const Code = (s, a, v, data) =>
   h('div', {
@@ -7,4 +8,4 @@ const Code = (s, a, v, data) =>
     }
   }, JSON.stringify(data, null, '  '))
 
-export { Code }
+export default Code

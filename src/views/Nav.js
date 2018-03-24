@@ -1,4 +1,5 @@
-import { h } from 'picodom'
+
+import { h } from 'ultradom'
 
 const Link = (href, value) =>
   h('li', null, [
@@ -22,4 +23,4 @@ const Nav = (s, a, v, d) =>
     Link('#/update', 'update')
   ])
 
-export { Nav }
+export default Nav

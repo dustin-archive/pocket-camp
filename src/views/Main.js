@@ -1,4 +1,5 @@
-import { h } from 'picodom'
+
+import { h } from 'ultradom'
 
 const Menu = () =>
   h('div', null, 'menu')
@@ -37,4 +38,4 @@ const Main = (s, a, v, d) =>
     Bottom()
   ])
 
-export { Main }
+export default Main

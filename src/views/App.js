@@ -1,8 +1,7 @@
-import { h } from 'picodom'
 
-import { Router } from './Router'
+import { h } from 'ultradom'
 
 const App = (state, a, v, d) =>
   h('a', { href: '#Main' }, 'Tap to start!')
 
-export { App }
+export default App

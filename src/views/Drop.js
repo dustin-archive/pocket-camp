@@ -1,4 +1,5 @@
-import { h } from 'picodom'
+
+import { h } from 'ultradom'
 
 const Drop = (state, actions, v, data) => children =>
   h('div', {
@@ -18,4 +19,4 @@ const Drop = (state, actions, v, data) => children =>
     }, children)
   ])
 
-export { Drop }
+export default Drop
